@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precios | AquaPool SpA</title>
+<meta name="description" content="Planes de mantención y servicios de construcción de piscinas. Planes Básico, Profesional y Premium.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { display: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }, colors: { cyan: { 50:'#ecfeff', 100:'#cffafe', 200:'#a5f3fc', 300:'#67e8f9', 400:'#22d3ee', 500:'#06b6d4', 600:'#0891b2', 700:'#0e7490', 800:'#155e75', 900:'#164e63' } } } } }
+</script>
+</head>
+<body data-page="pricing" class="font-body">
+
+<div id="navbarMount"></div>
+
+<!-- HERO -->
+<section class="page-hero text-white text-center">
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="inline-block text-cyan-200 font-semibold text-sm uppercase tracking-wider mb-4 reveal">Precios</span>
+    <h1 class="font-display text-4xl md:text-6xl font-bold mb-6 reveal reveal-delay-1">Planes <br>transparentes</h1>
+    <p class="text-xl text-cyan-100 max-w-2xl mx-auto reveal reveal-delay-2">Sin sorpresas, sin costos ocultos. Elige el plan que mejor se adapte a tus necesidades.</p>
+  </div>
+</section>
+
+<!-- TOGGLE + PLANES -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-center mb-12 reveal">
+      <div id="pricingToggle" class="toggle-pill relative">
+        <button data-period="monthly" class="active">Mensual</button>
+        <button data-period="annual">Anual <span class="text-xs ml-1 text-cyan-500">-15%</span></button>
+        <span class="indicator" style="left:4px; right:50%;"></span>
+      </div>
+    </div>
+    <div id="pricingPlans" class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto"></div>
+  </div>
+</section>
+
+<!-- SERVICIOS EXTRA -->
+<section class="py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Servicios adicionales</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-slate-800 mt-3 mb-4">Cotiza por <span class="text-cyan-600">proyecto</span></h2>
+      <p class="text-slate-600 text-lg max-w-2xl mx-auto">Valores referenciales. Cotización final según visita técnica.</p>
+    </div>
+    <div id="pricingExtras" class="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-24 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Preguntas frecuentes</span>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-800 mt-3">Resolvemos tus dudas</h2>
+    </div>
+    <div id="faqContainer"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-gradient-to-r from-cyan-500 to-cyan-700 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center reveal">
+    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">¿Listo para contratar?</h2>
+    <p class="text-cyan-100 text-lg mb-8">Conversemos sobre tus necesidades.</p>
+    <a href="contacto.html" class="inline-flex items-center gap-2 bg-white text-cyan-700 px-8 py-4 rounded-xl font-bold hover:bg-cyan-50 transition-all">
+      Contactar
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<div id="footerMount"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/pricing.js"></script>
+</body>
+</html>

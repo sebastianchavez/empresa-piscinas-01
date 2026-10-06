@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | AquaPool SpA</title>
+<meta name="description" content="Contacta a AquaPool SpA. Estamos en Las Condes, Santiago. Teléfono, email, horarios y formulario de contacto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { display: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }, colors: { cyan: { 50:'#ecfeff', 100:'#cffafe', 200:'#a5f3fc', 300:'#67e8f9', 400:'#22d3ee', 500:'#06b6d4', 600:'#0891b2', 700:'#0e7490', 800:'#155e75', 900:'#164e63' } } } } }
+</script>
+</head>
+<body data-page="contact" class="font-body">
+
+<div id="navbarMount"></div>
+
+<!-- HERO -->
+<section class="page-hero text-white text-center">
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="inline-block text-cyan-200 font-semibold text-sm uppercase tracking-wider mb-4 reveal">Contacto</span>
+    <h1 class="font-display text-4xl md:text-6xl font-bold mb-6 reveal reveal-delay-1">Conversemos <br>sobre tu proyecto</h1>
+    <p class="text-xl text-cyan-100 max-w-2xl mx-auto reveal reveal-delay-2">Estamos disponibles para resolver tus dudas y entregarte la mejor cotización.</p>
+  </div>
+</section>
+
+<!-- FORMULARIO + INFO -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-5 gap-12">
+      <!-- FORMULARIO -->
+      <div class="lg:col-span-3 reveal">
+        <h2 class="font-display text-3xl font-bold text-slate-800 mb-2">Envíanos un mensaje</h2>
+        <p class="text-slate-600 mb-8">Te responderemos en menos de 24 horas.</p>
+
+          <div id="formSuccess" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-xl p-4 mb-6 flex items-center gap-3">
+            <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><strong>¡Mensaje enviado!</strong> Te contactaremos pronto.</div>
+          </div>
+
+        <form id="contactForm" class="space-y-5" novalidate>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-2">Nombre completo *</label>
+              <input type="text" id="name" name="name" required placeholder="Juan Pérez" class="form-input">
+              <p class="form-error">Ingresa tu nombre</p>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-2">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="tu@email.cl" class="form-input">
+              <p class="form-error">Email inválido</p>
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-2">Teléfono</label>
+              <input type="tel" id="phone" name="phone" placeholder="+56 9 1234 5678" class="form-input">
+              <p class="form-error">Teléfono inválido</p>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-slate-700 mb-2">Asunto *</label>
+              <select id="subject" name="subject" required class="form-input">
+                <option value="">Selecciona un asunto</option>
+                <option value="cotizacion">Cotización construcción</option>
+                <option value="mantencion">Mantención</option>
+                <option value="reparacion">Reparación</option>
+                <option value="clases">Clases de natación</option>
+                <option value="otro">Otro</option>
+              </select>
+              <p class="form-error">Selecciona un asunto</p>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 mb-2">Mensaje *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos sobre tu proyecto..." class="form-input resize-none"></textarea>
+            <p class="form-error">Mínimo 10 caracteres</p>
+          </div>
+          <button type="submit" class="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white px-8 py-4 rounded-xl font-bold transition-all hover:shadow-lg hover:shadow-cyan-500/30 inline-flex items-center justify-center gap-2">
+            Enviar mensaje
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="lg:col-span-2 space-y-6 reveal reveal-delay-1">
+        <div class="bg-gradient-to-br from-cyan-50 to-cyan-100/50 rounded-2xl p-6">
+          <h3 class="font-display font-bold text-xl text-slate-800 mb-4">Información de contacto</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-800">Dirección</div>
+                <div class="text-slate-600 text-sm">Av. Las Condes 1234, Of. 502<br>Las Condes, Santiago, Chile</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.73 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-800">Teléfonos</div>
+                <div class="text-slate-600 text-sm"><a href="tel:+56223456789" class="hover:text-cyan-600">+56 2 2345 6789</a><br><a href="tel:+56987654321" class="hover:text-cyan-600">+56 9 8765 4321</a></div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zM22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-800">Email</div>
+                <div class="text-slate-600 text-sm"><a href="mailto:contacto@aquapool.cl" class="hover:text-cyan-600">contacto@aquapool.cl</a></div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.2-.2.2-.3.3-.5.1-.2 0-.4-.1-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-1 .5-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3zM12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-slate-800">WhatsApp</div>
+                <div class="text-slate-600 text-sm"><a href="https://wa.me/56987654321" target="_blank" class="hover:text-green-600">+56 9 8765 4321</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Horarios -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6">
+          <h3 class="font-display font-bold text-xl text-slate-800 mb-4 flex items-center gap-2">
+            <svg class="w-6 h-6 text-cyan-500" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Horarios de atención
+          </h3>
+          <ul class="space-y-3">
+            <li class="flex justify-between items-center pb-3 border-b border-slate-100">
+              <span class="text-slate-700 font-medium">Lunes a Viernes</span>
+              <span class="font-bold text-cyan-700">09:00 - 19:00</span>
+            </li>
+            <li class="flex justify-between items-center pb-3 border-b border-slate-100">
+              <span class="text-slate-700 font-medium">Sábado</span>
+              <span class="font-bold text-cyan-700">10:00 - 14:00</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <span class="text-slate-700 font-medium">Domingo</span>
+              <span class="font-bold text-slate-400">Cerrado</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAPA -->
+<section class="bg-slate-100">
+  <div class="max-w-7xl mx-auto">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.3265895234776!2d-70.5728!3d-33.4087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5fb0d6f0f9d%3A0x5b6e5e8b5b6e5e8b!2sAv.%20Las%20Condes%2C%20Las%20Condes%2C%20Chile!5e0!3m2!1ses!2scl!4v1700000000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+  </div>
+</section>
+
+<div id="footerMount"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>

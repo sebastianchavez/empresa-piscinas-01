@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios | AquaPool SpA</title>
+<meta name="description" content="Servicios de construcción, mantención, limpieza, reparación, climatización, iluminación y más para tu piscina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { display: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }, colors: { cyan: { 50:'#ecfeff', 100:'#cffafe', 200:'#a5f3fc', 300:'#67e8f9', 400:'#22d3ee', 500:'#06b6d4', 600:'#0891b2', 700:'#0e7490', 800:'#155e75', 900:'#164e63' } } } } }
+</script>
+</head>
+<body data-page="services" class="font-body">
+
+<div id="navbarMount"></div>
+
+<!-- HERO -->
+<section class="page-hero text-white text-center">
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="inline-block text-cyan-200 font-semibold text-sm uppercase tracking-wider mb-4 reveal">Nuestros servicios</span>
+    <h1 class="font-display text-4xl md:text-6xl font-bold mb-6 reveal reveal-delay-1">Soluciones integrales <br>para tu piscina</h1>
+    <p class="text-xl text-cyan-100 max-w-2xl mx-auto reveal reveal-delay-2">Desde el diseño hasta la mantención, cubrimos todas las necesidades de tu piscina con un servicio de excelencia.</p>
+  </div>
+</section>
+
+<!-- GRID DE SERVICIOS -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="py-24 bg-gradient-to-br from-slate-50 to-cyan-50/30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Cómo trabajamos</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-slate-800 mt-3 mb-4">Nuestro <span class="text-cyan-600">proceso</span></h2>
+      <p class="text-slate-600 text-lg max-w-2xl mx-auto">Un proceso claro, transparente y eficiente.</p>
+    </div>
+    <div id="processContainer" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </div>
+</section>
+
+<!-- FEATURES DESTACADAS -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">¿Por qué confiar?</span>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-800 mt-3 mb-6">Servicio técnico <span class="text-cyan-600">certificado</span></h2>
+        <p class="text-slate-600 leading-relaxed mb-6">Contamos con técnicos certificados, herramientas profesionales y productos de primera línea para garantizar el mejor resultado.</p>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3"><svg class="w-6 h-6 text-green-500 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-slate-700">Equipo técnico certificado y en constante capacitación</span></li>
+          <li class="flex items-start gap-3"><svg class="w-6 h-6 text-green-500 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-slate-700">Productos químicos premium y respetuosos con el medio ambiente</span></li>
+          <li class="flex items-start gap-3"><svg class="w-6 h-6 text-green-500 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-slate-700">Reportes digitales con foto y métricas del servicio</span></li>
+          <li class="flex items-start gap-3"><svg class="w-6 h-6 text-green-500 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="text-slate-700">Atención de emergencia 24/7 en planes superiores</span></li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-2 gap-4 reveal reveal-delay-1">
+        <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=400&q=80" alt="" class="rounded-2xl shadow-lg">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80" alt="" class="rounded-2xl shadow-lg mt-8">
+        <img src="https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&w=400&q=80" alt="" class="rounded-2xl shadow-lg -mt-8">
+        <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=400&q=80" alt="" class="rounded-2xl shadow-lg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-gradient-to-r from-cyan-500 to-cyan-700 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center reveal">
+    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">¿Necesitas alguno de nuestros servicios?</h2>
+    <p class="text-cyan-100 text-lg mb-8">Cotiza sin compromiso. Te entregamos un presupuesto en 24 horas.</p>
+    <a href="contacto.html" class="inline-flex items-center gap-2 bg-white text-cyan-700 px-8 py-4 rounded-xl font-bold hover:bg-cyan-50 transition-all">
+      Solicitar cotización
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<div id="footerMount"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

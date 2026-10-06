@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AquaPool SpA | Construcción y Mantención de Piscinas</title>
+<meta name="description" content="Empresa líder en construcción y mantención de piscinas residenciales y comerciales en Chile. 15+ años de experiencia, garantía real.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Poppins', 'sans-serif'],
+        body: ['Inter', 'sans-serif']
+      },
+      colors: {
+        cyan: { 50:'#ecfeff', 100:'#cffafe', 200:'#a5f3fc', 300:'#67e8f9', 400:'#22d3ee', 500:'#06b6d4', 600:'#0891b2', 700:'#0e7490', 800:'#155e75', 900:'#164e63' }
+      }
+    }
+  }
+}
+</script>
+</head>
+<body data-page="home" class="font-body">
+
+<div id="navbarMount"></div>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-cyan-500 via-cyan-600 to-cyan-800 pt-20">
+  <!-- Burbujas -->
+  <div class="absolute inset-0 pointer-events-none" id="heroBubbles"></div>
+  <!-- Overlay oscuro -->
+  <div class="absolute inset-0 bg-gradient-to-r from-cyan-900/80 via-cyan-800/50 to-transparent"></div>
+  <!-- Imagen de fondo -->
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1920&q=80" alt="" class="w-full h-full object-cover mix-blend-overlay opacity-40">
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="text-white">
+      <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 reveal">
+        <span class="w-2 h-2 rounded-full bg-cyan-300 animate-pulse"></span>
+        <span class="text-sm font-medium">Piscinas de ensueño, realidad</span>
+      </div>
+      <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 reveal reveal-delay-1">
+        Construimos la <span class="text-cyan-200">piscina</span> de tus sueños
+      </h1>
+      <p class="text-lg text-cyan-100 leading-relaxed mb-8 max-w-lg reveal reveal-delay-2">
+        Expertos en piscinas residenciales y comerciales con más de 15 años de experiencia. Calidad, diseño y servicio personalizado en cada obra.
+      </p>
+      <div class="flex flex-wrap gap-4 reveal reveal-delay-3">
+        <a href="contacto.html" class="pulse-cta bg-white text-cyan-700 px-8 py-4 rounded-xl font-bold hover:bg-cyan-50 transition-all shadow-xl hover:scale-105 inline-flex items-center gap-2">
+          Cotiza tu piscina
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="servicios.html" class="border-2 border-white/40 hover:bg-white/10 text-white px-8 py-4 rounded-xl font-bold transition-all backdrop-blur-sm">
+          Ver servicios
+        </a>
+      </div>
+      <div class="flex items-center gap-8 mt-12 text-cyan-100 reveal reveal-delay-4">
+        <div><span class="font-display text-3xl font-bold text-white">15+</span><div class="text-sm">Años</div></div>
+        <div class="w-px h-12 bg-white/20"></div>
+        <div><span class="font-display text-3xl font-bold text-white">480+</span><div class="text-sm">Piscinas</div></div>
+        <div class="w-px h-12 bg-white/20"></div>
+        <div><span class="font-display text-3xl font-bold text-white">5★</span><div class="text-sm">Calidad</div></div>
+      </div>
+    </div>
+    <div class="relative hidden lg:block reveal">
+        <div class="absolute -top-10 -right-10 w-72 h-72 bg-cyan-300/30 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-cyan-400/30 rounded-full blur-3xl"></div>
+      <img src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=900&q=80" alt="Piscina moderna" class="relative rounded-3xl shadow-2xl border-4 border-white/10">
+      <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-2xl flex items-center gap-3 float-anim">
+        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+          <svg class="w-6 h-6 text-green-600" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <div class="font-bold text-slate-800 text-sm">Garantía 5 años</div>
+          <div class="text-xs text-slate-500">En estructura</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#services" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce" aria-label="Desplazar">
+    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M19 14l-7 7-7-7M19 6l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</section>
+
+<!-- SERVICIOS DESTACADOS -->
+<section id="services" class="py-24 bg-white relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Nuestros servicios</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-slate-800 mt-3 mb-4">Soluciones integrales <span class="text-cyan-600">acuáticas</span></h2>
+      <p class="text-slate-600 text-lg">Desde el diseño hasta la mantención, te acompañamos en cada etapa de tu proyecto.</p>
+    </div>
+    <div id="featuredServices" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    <div class="text-center mt-12 reveal">
+      <a href="servicios.html" class="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
+        Ver todos los servicios
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ ELEGIRNOS -->
+<section class="py-24 bg-gradient-to-br from-slate-50 to-cyan-50/30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Por qué elegirnos</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-slate-800 mt-3 mb-4">Excelencia en cada <span class="text-cyan-600">proyecto</span></h2>
+      <p class="text-slate-600 text-lg">Más de 480 piscinas construidas avalan nuestra experiencia.</p>
+    </div>
+    <div id="whyUsContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="relative py-24 bg-gradient-to-br from-cyan-600 via-cyan-700 to-cyan-900 overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-10 left-10 w-72 h-72 bg-white/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-cyan-300/30 rounded-full blur-3xl"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center text-white mb-12 reveal">
+      <h2 class="font-display text-3xl md:text-5xl font-bold mb-4">Cifras que hablan</h2>
+      <p class="text-cyan-100 text-lg">Resultados que nos respaldan</p>
+    </div>
+    <div id="statsContainer" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+  </div>
+</section>
+
+<!-- PROYECTOS DESTACADOS -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Proyectos</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-slate-800 mt-3 mb-4">Trabajos <span class="text-cyan-600">destacados</span></h2>
+      <p class="text-slate-600 text-lg">Algunos de nuestros proyectos más emblemáticos.</p>
+    </div>
+    <div id="projectsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    <div class="text-center mt-12 reveal">
+      <a href="galeria.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-xl hover:shadow-cyan-500/30 transition-all">
+        Ver galería completa
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Testimonios</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-slate-800 mt-3 mb-4">Lo que dicen <span class="text-cyan-600">nuestros clientes</span></h2>
+    </div>
+    <div class="overflow-hidden reveal">
+      <div id="testimonialTrack" class="testimonial-track"></div>
+    </div>
+    <div id="testimonialDots" class="testimonial-dots"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-gradient-to-r from-cyan-500 to-cyan-700 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10"><div class="absolute -top-20 -right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div></div>
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white reveal">
+    <h2 class="font-display text-3xl md:text-5xl font-bold mb-6">¿Listo para tu piscina soñada?</h2>
+    <p class="text-cyan-100 text-lg mb-8 max-w-2xl mx-auto">Cotiza sin compromiso. Te entregamos un presupuesto detallado en 24 horas.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="contacto.html" class="bg-white text-cyan-700 px-8 py-4 rounded-xl font-bold hover:bg-cyan-50 transition-all shadow-xl inline-flex items-center gap-2">
+        Solicitar cotización
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="https://wa.me/56987654321" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold transition-all inline-flex items-center gap-2">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.2-.2.2-.3.3-.5.1-.2 0-.4-.1-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-1 .5-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3zM12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<div id="footerMount"></div>
+
+<!-- Scripts -->
+<script src="assets/js/data.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('heroBubbles').innerHTML = window.AQUAPOOL_COMPONENTS.renderBubbles(20);
+  });
+</script>
+</body>
+</html>

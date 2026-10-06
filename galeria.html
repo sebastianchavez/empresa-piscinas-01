@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería | AquaPool SpA</title>
+<meta name="description" content="Galería de proyectos AquaPool: piscinas residenciales, comerciales y servicios de mantención.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { display: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }, colors: { cyan: { 50:'#ecfeff', 100:'#cffafe', 200:'#a5f3fc', 300:'#67e8f9', 400:'#22d3ee', 500:'#06b6d4', 600:'#0891b2', 700:'#0e7490', 800:'#155e75', 900:'#164e63' } } } } }
+</script>
+</head>
+<body data-page="gallery" class="font-body">
+
+<div id="navbarMount"></div>
+
+<!-- HERO -->
+<section class="page-hero text-white text-center">
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="inline-block text-cyan-200 font-semibold text-sm uppercase tracking-wider mb-4 reveal">Galería</span>
+    <h1 class="font-display text-4xl md:text-6xl font-bold mb-6 reveal reveal-delay-1">Nuestros <br>trabajos realizados</h1>
+    <p class="text-xl text-cyan-100 max-w-2xl mx-auto reveal reveal-delay-2">Una selección de proyectos que reflejan nuestro compromiso con la excelencia.</p>
+  </div>
+</section>
+
+<!-- FILTROS -->
+<section class="py-12 bg-white sticky top-20 z-30 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="galleryFilters" class="flex flex-wrap justify-center gap-3"></div>
+  </div>
+</section>
+
+<!-- GRID GALERÍA -->
+<section class="py-16 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="galleryGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <button id="lightboxClose" class="lightbox-close" aria-label="Cerrar">
+    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+  <div class="text-center">
+    <img id="lightboxImg" src="" alt="">
+    <div class="text-white mt-4">
+      <h3 id="lightboxTitle" class="font-display text-2xl font-bold"></h3>
+      <p id="lightboxDesc" class="text-cyan-100 mt-1"></p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="py-20 bg-gradient-to-r from-cyan-500 to-cyan-700 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center reveal">
+    <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">¿Tu proyecto podría ser el próximo?</h2>
+    <p class="text-cyan-100 text-lg mb-8">Cotiza tu idea y comencemos a trabajar juntos.</p>
+    <a href="contacto.html" class="inline-flex items-center gap-2 bg-white text-cyan-700 px-8 py-4 rounded-xl font-bold hover:bg-cyan-50 transition-all">
+      Empezar proyecto
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<div id="footerMount"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/gallery.js"></script>
+</body>
+</html>

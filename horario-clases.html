@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horario de Clases | AquaPool SpA</title>
+<meta name="description" content="Horarios de clases de natación, aquagym, hidroterapia y más en AquaPool. Reserva tu clase hoy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { display: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }, colors: { cyan: { 50:'#ecfeff', 100:'#cffafe', 200:'#a5f3fc', 300:'#67e8f9', 400:'#22d3ee', 500:'#06b6d4', 600:'#0891b2', 700:'#0e7490', 800:'#155e75', 900:'#164e63' } } } } }
+</script>
+</head>
+<body data-page="classes" class="font-body">
+
+<div id="navbarMount"></div>
+
+<!-- HERO -->
+<section class="page-hero text-white text-center">
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="inline-block text-cyan-200 font-semibold text-sm uppercase tracking-wider mb-4 reveal">Clases de natación</span>
+    <h1 class="font-display text-4xl md:text-6xl font-bold mb-6 reveal reveal-delay-1">Aprende, disfruta <br>y mantente en forma</h1>
+    <p class="text-xl text-cyan-100 max-w-2xl mx-auto reveal reveal-delay-2">Clases para todas las edades y niveles con instructores certificados.</p>
+  </div>
+</section>
+
+<!-- TIPOS DE CLASES -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Nuestras clases</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-slate-800 mt-3 mb-4">Para <span class="text-cyan-600">todos</span></h2>
+      <p class="text-slate-600 text-lg max-w-2xl mx-auto">Cinco modalidades adaptadas a cada necesidad.</p>
+    </div>
+    <div id="classTypesContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- HORARIO SEMANAL -->
+<section class="py-24 bg-gradient-to-br from-slate-50 to-cyan-50/30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Horario semanal</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-slate-800 mt-3 mb-4">Lunes a <span class="text-cyan-600">domingo</span></h2>
+      <p class="text-slate-600 text-lg max-w-2xl mx-auto">Selecciona el día y horario que mejor te acomode.</p>
+    </div>
+    <div id="scheduleContainer" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- INSTRUCTORES -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+      <span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Instructores</span>
+      <h2 class="font-display text-3xl md:text-5xl font-bold text-slate-800 mt-3 mb-4">Profesionales <span class="text-cyan-600">certificados</span></h2>
+    </div>
+    <div id="instructorsContainer" class="grid sm:grid-cols-3 gap-10 max-w-4xl mx-auto"></div>
+  </div>
+</section>
+
+<!-- INFO TARIFAS -->
+<section class="py-20 bg-gradient-to-r from-cyan-500 to-cyan-700 text-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-3">Tarifas</h2>
+      <p class="text-cyan-100">Planes mensuales sin compromiso de permanencia</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center reveal">
+        <h3 class="font-display text-xl font-bold mb-2">Plan mensual</h3>
+        <div class="text-4xl font-bold mb-3">$45.000</div>
+        <p class="text-cyan-100 text-sm">Acceso ilimitado a nado libre + 4 clases grupales</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center reveal reveal-delay-1">
+        <h3 class="font-display text-xl font-bold mb-2">Pack 12 clases</h3>
+        <div class="text-4xl font-bold mb-3">$120.000</div>
+        <p class="text-cyan-100 text-sm">Válido por 3 meses</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center reveal reveal-delay-2">
+        <h3 class="font-display text-xl font-bold mb-2">Clase particular</h3>
+        <div class="text-4xl font-bold mb-3">$25.000</div>
+        <p class="text-cyan-100 text-sm">Sesión 1 hora con instructor</p>
+      </div>
+    </div>
+    <div class="text-center mt-12 reveal">
+      <a href="contacto.html" class="inline-flex items-center gap-2 bg-white text-cyan-700 px-8 py-4 rounded-xl font-bold hover:bg-cyan-50 transition-all">
+        Reservar mi clase
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div id="footerMount"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/schedule.js"></script>
+</body>
+</html>

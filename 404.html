@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Página no encontrada | AquaPool SpA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { display: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }, colors: { cyan: { 50:'#ecfeff', 100:'#cffafe', 200:'#a5f3fc', 300:'#67e8f9', 400:'#22d3ee', 500:'#06b6d4', 600:'#0891b2', 700:'#0e7490', 800:'#155e75', 900:'#164e63' } } } } }
+</script>
+</head>
+<body data-page="" class="font-body bg-gradient-to-br from-cyan-500 via-cyan-600 to-cyan-800 min-h-screen flex items-center justify-center text-white overflow-hidden relative">
+
+<!-- Burbujas decorativas -->
+<div class="absolute inset-0 pointer-events-none" id="heroBubbles"></div>
+
+<div class="relative text-center px-4 reveal">
+  <div class="font-display text-[150px] md:text-[200px] font-bold leading-none mb-4 text-cyan-200">404</div>
+  <h1 class="font-display text-3xl md:text-4xl font-bold mb-4">Página no encontrada</h1>
+  <p class="text-cyan-100 text-lg mb-8 max-w-md mx-auto">Lo sentimos, la página que buscas se ha hundido en el fondo de la piscina.</p>
+  <div class="flex flex-wrap justify-center gap-4">
+    <a href="index.html" class="inline-flex items-center gap-2 bg-white text-cyan-700 px-8 py-4 rounded-xl font-bold hover:bg-cyan-50 transition-all shadow-xl">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Volver al inicio
+    </a>
+    <a href="contacto.html" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold transition-all">
+      Contactar
+    </a>
+  </div>
+</div>
+
+<div id="footerMount"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('heroBubbles').innerHTML = window.AQUAPOOL_COMPONENTS.renderBubbles(15);
+  });
+</script>
+</body>
+</html>
