@@ -4,13 +4,15 @@
    ================================================================ */
 
 /* ---------------- Base ---------------- */
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
 body {
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 .font-display { font-family: 'Poppins', system-ui, sans-serif; }
+img { max-width: 100%; }
+.grid > * { min-width: 0; }
 
 /* ---------------- Loader inicial ---------------- */
 .app-loader {
@@ -255,8 +257,10 @@ body {
 .faq-item.open .faq-icon { transform: rotate(45deg); }
 
 /* ---------------- Gallery filter ---------------- */
+.gallery-filter-bar { padding-block: 1rem; }
 .filter-btn {
-  padding: .5rem .625rem;
+  padding: .625rem 1rem;
+  min-height: 44px;
   border-radius: 999px;
   font-weight: 500;
   border: 1px solid #e2e8f0;
@@ -279,7 +283,9 @@ body {
   overflow: hidden;
   cursor: pointer;
   aspect-ratio: 4/3;
+  background: #e2e8f0;
 }
+.gallery-item:focus-visible { outline: 3px solid #0891b2; outline-offset: 4px; }
 .gallery-item img {
   width: 100%; height: 100%;
   object-fit: cover;
@@ -295,7 +301,11 @@ body {
   padding: 1.25rem;
   color: white;
 }
-.gallery-item:hover .overlay { opacity: 1; }
+.gallery-item:hover .overlay,
+.gallery-item:focus-visible .overlay { opacity: 1; }
+@media (hover: none) {
+  .gallery-item .overlay { opacity: 1; }
+}
 
 /* ---------------- Lightbox ---------------- */
 .lightbox {
@@ -306,10 +316,14 @@ body {
   align-items: center; justify-content: center;
   padding: 2rem;
   animation: fade-in .3s ease;
+  overflow-y: auto;
 }
+.lightbox > div { width: min(100%, 1200px); }
 .lightbox.open { display: flex; }
 .lightbox img {
-  max-width: 90%; max-height: 85vh;
+  display: block; margin-inline: auto;
+  max-width: 100%; max-height: 65vh;
+  object-fit: contain;
   border-radius: .75rem;
   box-shadow: 0 20px 60px rgba(0,0,0,.5);
 }
@@ -407,10 +421,38 @@ body {
   background-size: cover;
 }
 
+/* Compact spacing and natural line breaks on small screens. */
+@media (max-width: 767px) {
+  .page-hero { padding: 8rem 0 3rem; }
+  .page-hero h1 {
+    font-size: clamp(1.875rem, 6.5vw, 2.75rem);
+    line-height: 1.2;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    margin-bottom: 1.25rem;
+  }
+  .page-hero h1 br { display: none; }
+  .page-hero p { font-size: 1.0625rem; line-height: 1.65; }
+  .page-hero > div { padding-inline: 1.5rem; }
+  .wa-float {
+    width: 52px; height: 52px;
+    right: max(16px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+  }
+  .lightbox { padding: 4.5rem 1rem 2rem; }
+  .plan-card.popular, .plan-card.popular:hover { transform: none; }
+  .schedule-row { align-items: flex-start; flex-direction: column; gap: .5rem; }
+  .schedule-row > .text-right { text-align: left; }
+}
+@media (max-width: 479px) {
+  #galleryFilters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .filter-btn { font-size: .875rem; padding-inline: .75rem; }
+}
+
 /* ---------------- Mobile menu ---------------- */
 .mobile-menu {
   position: fixed; top: 0; right: -100%;
-  width: 80%; max-width: 320px; height: 100vh;
+  width: 90%; max-width: 320px; height: 100vh; height: 100dvh;
   background: white;
   box-shadow: -10px 0 30px rgba(0,0,0,.1);
   transition: right .3s ease;

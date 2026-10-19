@@ -60,12 +60,12 @@ function renderNavbar() {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
           <a href="index.html" class="flex items-center gap-3">
-            <img src="assets/img/logo.svg" alt="${COMPANY_INFO.name}" class="h-12">
+            <img src="assets/img/logo.svg" alt="${COMPANY_INFO.name}" class="h-10 sm:h-12 w-auto">
           </a>
-          <div class="hidden lg:flex items-center gap-8">
+          <div class="hidden xl:flex items-center gap-4">
             ${links}
           </div>
-          <div class="hidden lg:flex items-center gap-4">
+          <div class="hidden xl:flex items-center gap-4">
             <a href="${COMPANY_INFO.whatsappLink}" target="_blank" class="text-cyan-600 hover:text-cyan-700 flex items-center gap-2">
               ${icon('phone', 'w-4 h-4')}
               <span class="font-semibold text-sm">${COMPANY_INFO.phone}</span>
@@ -74,7 +74,7 @@ function renderNavbar() {
               Cotiza ahora
             </a>
           </div>
-          <button id="menuBtn" class="lg:hidden p-2 text-slate-700" aria-label="Menú">
+          <button id="menuBtn" class="xl:hidden p-2 text-slate-700" aria-label="Menú">
             ${icon('menu', 'w-7 h-7')}
           </button>
         </div>

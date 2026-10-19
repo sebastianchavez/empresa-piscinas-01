@@ -277,18 +277,18 @@ const GALLERY_FILTERS = [
 ];
 
 const GALLERY_ITEMS = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1200&q=80', category: 'residential', title: 'Piscina infinity', desc: 'Diseño moderno con vista panorámica.' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80', category: 'commercial', title: 'Hotel 5 estrellas', desc: 'Piscina principal de hotel boutique.' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', category: 'residential', title: 'Piscina familiar', desc: 'Diseño mediterráneo.' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80', category: 'maintenance', title: 'Mantención integral', desc: 'Servicio premium residencial.' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&w=1200&q=80', category: 'commercial', title: 'Spa termal', desc: 'Piscina climatizada con vista.' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1200&q=80', category: 'commercial', title: 'Piscina deportiva', desc: 'Semi-olímpica para gimnasio.' },
-  { id: 7, src: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80', category: 'residential', title: 'Iluminación LED', desc: 'Sistema RGB subacuático.' },
-  { id: 8, src: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80', category: 'maintenance', title: 'Limpieza profunda', desc: 'Servicio técnico completo.' },
-  { id: 9, src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&q=80', category: 'residential', title: 'Jacuzzi integrado', desc: 'Spa familiar con jacuzzi.' },
-  { id: 10, src: 'https://images.unsplash.com/photo-1576675784201-0e142b423952?auto=format&fit=crop&w=1200&q=80', category: 'commercial', title: 'Condominio premium', desc: 'Piscina comunitaria.' },
-  { id: 11, src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80', category: 'residential', title: 'Casa de verano', desc: 'Piscina rústica.' },
-  { id: 12, src: 'https://images.unsplash.com/photo-1597598872933-aec1fe80ed3d?auto=format&fit=crop&w=1200&q=80', category: 'maintenance', title: 'Revestimiento vinílico', desc: 'Renovación completa.' }
+  { id: 1, src: 'assets/img/gallery/project-1.jpg', category: 'residential', title: 'Piscina infinity', desc: 'Diseño moderno con vista panorámica.' },
+  { id: 2, src: 'assets/img/gallery/project-2.jpg', category: 'commercial', title: 'Hotel 5 estrellas', desc: 'Piscina principal de hotel boutique.' },
+  { id: 3, src: 'assets/img/gallery/project-3.jpg', category: 'residential', title: 'Piscina familiar', desc: 'Diseño mediterráneo.' },
+  { id: 4, src: 'assets/img/gallery/project-4.jpg', category: 'maintenance', title: 'Mantención integral', desc: 'Servicio premium residencial.' },
+  { id: 5, src: 'assets/img/gallery/project-5.jpg', category: 'commercial', title: 'Spa termal', desc: 'Piscina climatizada con vista.' },
+  { id: 6, src: 'assets/img/gallery/project-6.jpg', category: 'commercial', title: 'Piscina deportiva', desc: 'Semi-olímpica para gimnasio.' },
+  { id: 7, src: 'assets/img/gallery/project-7.jpg', category: 'residential', title: 'Iluminación LED', desc: 'Sistema RGB subacuático.' },
+  { id: 8, src: 'assets/img/gallery/project-8.jpg', category: 'maintenance', title: 'Limpieza profunda', desc: 'Servicio técnico completo.' },
+  { id: 9, src: 'assets/img/gallery/project-9.jpg', category: 'residential', title: 'Jacuzzi integrado', desc: 'Spa familiar con jacuzzi.' },
+  { id: 10, src: 'assets/img/gallery/project-10.jpg', category: 'commercial', title: 'Condominio premium', desc: 'Piscina comunitaria.' },
+  { id: 11, src: 'assets/img/gallery/project-11.jpg', category: 'residential', title: 'Casa de verano', desc: 'Piscina rústica.' },
+  { id: 12, src: 'assets/img/gallery/project-12.jpg', category: 'maintenance', title: 'Revestimiento vinílico', desc: 'Renovación completa.' }
 ];
 
 const PRICING_PLANS = [
