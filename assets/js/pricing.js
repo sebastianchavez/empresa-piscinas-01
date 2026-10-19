@@ -76,12 +76,12 @@ function initPricing() {
   function renderExtras() {
     const { PRICING_EXTRAS } = window.AQUAPOOL_DATA;
     extrasEl.innerHTML = PRICING_EXTRAS.map(e => `
-      <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-slate-100">
         <div class="flex items-center gap-3">
           ${window.AQUAPOOL_COMPONENTS.icon('check', 'w-5 h-5 text-cyan-500')}
           <span class="text-slate-700">${e.service}</span>
         </div>
-        <div class="text-right">
+        <div class="text-left sm:text-right shrink-0">
           <div class="font-display font-bold text-cyan-700">Desde ${formatCLP(e.from)}</div>
           <div class="text-xs text-slate-500">por ${e.unit}</div>
         </div>

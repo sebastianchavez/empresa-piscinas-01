@@ -17,15 +17,15 @@ function initGallery() {
 
   // Render filters
   filtersEl.innerHTML = GALLERY_FILTERS.map((f, i) => `
-    <button data-filter="${f.id}" class="filter-btn ${i === 0 ? 'active' : ''}">${f.label}</button>
+    <button type="button" data-filter="${f.id}" aria-pressed="${i === 0}" class="filter-btn ${i === 0 ? 'active' : ''}">${f.label}</button>
   `).join('');
 
   // Render items
   function renderItems(filter = 'all') {
     const items = filter === 'all' ? GALLERY_ITEMS : GALLERY_ITEMS.filter(i => i.category === filter);
     gridEl.innerHTML = items.map(item => `
-      <article class="gallery-item" data-id="${item.id}" data-category="${item.category}">
-        <img src="${item.src}" alt="${item.title}" loading="lazy">
+      <article class="gallery-item" data-id="${item.id}" data-category="${item.category}" tabindex="0" role="button" aria-label="Ver ${item.title}">
+        <img src="${item.src}" alt="${item.title}" loading="lazy" decoding="async" width="1200" height="900">
         <div class="overlay">
           <div>
             <h3 class="font-display font-bold text-lg">${item.title}</h3>
@@ -37,6 +37,12 @@ function initGallery() {
 
     gridEl.querySelectorAll('.gallery-item').forEach(el => {
       el.addEventListener('click', () => openLightbox(el));
+      el.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(el);
+        }
+      });
       // Animar entrada
       el.style.opacity = '0';
       el.style.transform = 'translateY(20px)';
@@ -51,8 +57,12 @@ function initGallery() {
   // Filter click
   filtersEl.querySelectorAll('button').forEach(btn => {
     btn.addEventListener('click', () => {
-      filtersEl.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+      filtersEl.querySelectorAll('button').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
       renderItems(btn.dataset.filter);
     });
   });
